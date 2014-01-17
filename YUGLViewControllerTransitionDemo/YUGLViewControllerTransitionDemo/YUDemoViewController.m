@@ -102,6 +102,7 @@
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
     transition.transitionFilter = [[YUGLViewControllerTransitionSwapFilter alloc] init];
+    transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
 }
 
@@ -110,6 +111,7 @@
     transition.duration = 1.0;
     transition.transitionFilter = [[YUGLViewControllerTransitionSwapFilter alloc] init];
     transition.reverse = YES;
+    transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
 }
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <GPUImage/GPUImage.h>
 #import "YUGLViewControllerTransitionFilter.h"
+#import "YUMediaTimingFunction.h"
 
 @interface YUGLViewControllerTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
@@ -17,5 +18,7 @@
 @property (nonatomic) NSTimeInterval duration;
 
 @property (nonatomic) BOOL reverse;
+
+@property (nonatomic,strong) YUMediaTimingFunction *timingFunction;
 
 @end

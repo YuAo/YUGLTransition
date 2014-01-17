@@ -8,6 +8,10 @@
 
 #import "YUGLViewControllerTransition.h"
 
+@interface YUMediaTimingFunction (Private)
+@property (nonatomic) NSTimeInterval duration;
+@end
+
 @interface YUGLViewControllerTransition ()
 @property (nonatomic,weak) CADisplayLink *displayLink;
 @property (nonatomic,weak) id<UIViewControllerContextTransitioning> transitionContext;
@@ -73,23 +77,15 @@
     self.animationStartTimestamp = 0;
 }
 
-double QuadraticEaseInOut(double p)
-{
-	if(p < 0.5)
-	{
-		return 2 * p * p;
-	}
-	else
-	{
-		return (-2 * p * p) + (4 * p) - 1;
-	}
-}
-
 - (void)update:(CADisplayLink *)sender {
     if (!self.animationStartTimestamp) self.animationStartTimestamp = sender.timestamp;
     
     double progress = MAX(0, MIN((sender.timestamp - self.animationStartTimestamp) / self.duration, 1));
-    progress = QuadraticEaseInOut(progress);
+    
+    if (self.timingFunction) {
+        self.timingFunction.duration = self.duration;
+        progress = [self.timingFunction valueForInput:progress];
+    }
     
     if (self.reverse) progress = 1 - progress;
     
