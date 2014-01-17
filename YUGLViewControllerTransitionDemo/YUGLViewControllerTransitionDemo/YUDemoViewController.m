@@ -7,6 +7,13 @@
 //
 
 #import "YUDemoViewController.h"
+#import "YUGLViewControllerTransition.h"
+#import "YUGLViewControllerTransitionCrossDissolveFilter.h"
+#import "YUGLViewControllerTransitionFlashFilter.h"
+#import "YUGLViewControllerTransitionFlyeyeFilter.h"
+#import "YUGLViewControllerTransitionBlurFilter.h"
+#import "YUGLViewControllerTransitionRippleFilter.h"
+#import "YUGLViewControllerTransitionSwapFilter.h"
 
 @interface YUDemoViewControllerBackgroundImageManager : NSObject
 @property (nonatomic) NSUInteger index;
@@ -63,9 +70,15 @@
     [self.view addSubview:imageView];
     self.imageView = imageView;
     
-    
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewTapped:)];
     [self.imageView addGestureRecognizer:tapGestureRecognizer];
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setTitle:NSLocalizedString(@"Back", @"") forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
+    backButton.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+    backButton.frame = CGRectMake(0, CGRectGetHeight(self.view.bounds) - 44, CGRectGetWidth(self.view.bounds), 44);
+    [self.view addSubview:backButton];
 }
 
 - (void)viewDidLoad
@@ -79,6 +92,25 @@
     YUDemoViewController *nextViewController = [[YUDemoViewController alloc] init];
     nextViewController.transitioningDelegate = self;
     [self presentViewController:nextViewController animated:YES completion:nil];
+}
+
+- (void)dismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
+    transition.duration = 1.0;
+    transition.transitionFilter = [[YUGLViewControllerTransitionSwapFilter alloc] init];
+    return transition;
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
+    transition.duration = 1.0;
+    transition.transitionFilter = [[YUGLViewControllerTransitionSwapFilter alloc] init];
+    transition.reverse = YES;
+    return transition;
 }
 
 @end
