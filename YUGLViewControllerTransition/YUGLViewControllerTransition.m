@@ -95,7 +95,7 @@ double QuadraticEaseInOut(double p)
     
     if ( (!self.reverse && progress >= 1) || (self.reverse && progress <= 0)) {
         [self.displayLink invalidate];
-        [self.transitionContext completeTransition:YES];
+        [self.transitionContext completeTransition:![self.transitionContext transitionWasCancelled]];
     } else {
         self.transitionFilter.progress = progress;
         [self.fromViewControllerViewSnapshot processImage];
