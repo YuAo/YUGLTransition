@@ -13,7 +13,7 @@
 
 @interface YUGLViewControllerTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic,strong) GPUImageFilter<YUGLTransitionFilter> *transitionFilter;
+@property (nonatomic,strong) YUGLTransitionFilter *transitionFilter;
 
 @property (nonatomic) NSTimeInterval duration;
 

@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GPUImage/GPUImage.h>
 
 @protocol YUGLTransitionFilter <NSObject>
 
 @property (nonatomic) CGFloat progress;
 
 @end
+
+typedef GPUImageOutput<GPUImageInput,YUGLTransitionFilter> YUGLTransitionFilter;
