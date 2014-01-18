@@ -24,6 +24,8 @@
 		9D3FF6B91888DF060015FF23 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B51888DF060015FF23 /* 2.jpg */; };
 		9D3FF6BA1888DF060015FF23 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B61888DF060015FF23 /* 3.jpg */; };
 		9D3FF6BB1888DF060015FF23 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B71888DF060015FF23 /* 0.jpg */; };
+		9D66EC8E188AC0DC0090DBB4 /* YUGLViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66EC8D188AC0DC0090DBB4 /* YUGLViewTransition.m */; };
+		9D66EC94188AC45F0090DBB4 /* YUGLTransitionRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66EC93188AC45F0090DBB4 /* YUGLTransitionRenderer.m */; };
 		9D7D6F76188A29C1009AB974 /* YUGLViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */; };
 		9D7D6F78188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F6A188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m */; };
 		9D7D6F79188A29C1009AB974 /* YUGLFlashTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F6D188A29C1009AB974 /* YUGLFlashTransitionFilter.m */; };
@@ -67,6 +69,10 @@
 		9D3FF6B51888DF060015FF23 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		9D3FF6B61888DF060015FF23 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		9D3FF6B71888DF060015FF23 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		9D66EC8C188AC0DC0090DBB4 /* YUGLViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewTransition.h; sourceTree = "<group>"; };
+		9D66EC8D188AC0DC0090DBB4 /* YUGLViewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewTransition.m; sourceTree = "<group>"; };
+		9D66EC92188AC45F0090DBB4 /* YUGLTransitionRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLTransitionRenderer.h; sourceTree = "<group>"; };
+		9D66EC93188AC45F0090DBB4 /* YUGLTransitionRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLTransitionRenderer.m; sourceTree = "<group>"; };
 		9D7D6F65188A29C1009AB974 /* YUGLViewControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransition.h; sourceTree = "<group>"; };
 		9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransition.m; sourceTree = "<group>"; };
 		9D7D6F69188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLCrossDissolveTransitionFilter.h; sourceTree = "<group>"; };
@@ -201,6 +207,10 @@
 		9D7D6F64188A29C1009AB974 /* YUGLTransition */ = {
 			isa = PBXGroup;
 			children = (
+				9D66EC92188AC45F0090DBB4 /* YUGLTransitionRenderer.h */,
+				9D66EC93188AC45F0090DBB4 /* YUGLTransitionRenderer.m */,
+				9D66EC8C188AC0DC0090DBB4 /* YUGLViewTransition.h */,
+				9D66EC8D188AC0DC0090DBB4 /* YUGLViewTransition.m */,
 				9D7D6F65188A29C1009AB974 /* YUGLViewControllerTransition.h */,
 				9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */,
 				9D7D6F6B188A29C1009AB974 /* YUGLTransitionFilter.h */,
@@ -358,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7D6F76188A29C1009AB974 /* YUGLViewControllerTransition.m in Sources */,
+				9D66EC94188AC45F0090DBB4 /* YUGLTransitionRenderer.m in Sources */,
 				9D3FF6941888DC590015FF23 /* YUDemoViewController.m in Sources */,
 				9D3FF68E1888DC590015FF23 /* YUAppDelegate.m in Sources */,
 				9D7D6F7C188A29C1009AB974 /* YUGLSwapTransitionFilter.m in Sources */,
@@ -367,6 +378,7 @@
 				9D7D6F78188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m in Sources */,
 				9D3FF68A1888DC590015FF23 /* main.m in Sources */,
 				9D7D6F7D188A29C1009AB974 /* YUMediaTimingFunction.m in Sources */,
+				9D66EC8E188AC0DC0090DBB4 /* YUGLViewTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
