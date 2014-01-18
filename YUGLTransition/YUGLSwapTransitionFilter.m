@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "YUGLViewControllerTransitionSwapFilter.h"
+#import "YUGLSwapTransitionFilter.h"
 
-NSString *const YUGLViewControllerTransitionSwapFilterFragmentShaderString = SHADER_STRING
+NSString *const YUGLSwapTransitionFilterFragmentShaderString = SHADER_STRING
 (
  precision highp float;
  
@@ -84,18 +84,18 @@ NSString *const YUGLViewControllerTransitionSwapFilterFragmentShaderString = SHA
  }
 );
 
-@interface YUGLViewControllerTransitionSwapFilter ()
+@interface YUGLSwapTransitionFilter ()
 @property (nonatomic) GLint progressUniform;
 @property (nonatomic) GLint reflectionUniform;
 @property (nonatomic) GLint perspectiveUniform;
 @property (nonatomic) GLint depthUniform;
 @end
 
-@implementation YUGLViewControllerTransitionSwapFilter
+@implementation YUGLSwapTransitionFilter
 
 - (id)init;
 {
-    if (!(self = [super initWithFragmentShaderFromString:YUGLViewControllerTransitionSwapFilterFragmentShaderString]))
+    if (!(self = [super initWithFragmentShaderFromString:YUGLSwapTransitionFilterFragmentShaderString]))
     {
 		return nil;
     }

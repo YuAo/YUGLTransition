@@ -8,12 +8,7 @@
 
 #import "YUDemoViewController.h"
 #import "YUGLViewControllerTransition.h"
-#import "YUGLViewControllerTransitionCrossDissolveFilter.h"
-#import "YUGLViewControllerTransitionFlashFilter.h"
-#import "YUGLViewControllerTransitionFlyeyeFilter.h"
-#import "YUGLViewControllerTransitionBlurFilter.h"
-#import "YUGLViewControllerTransitionRippleFilter.h"
-#import "YUGLViewControllerTransitionSwapFilter.h"
+#import "YUGLSwapTransitionFilter.h"
 
 @interface YUDemoViewControllerBackgroundImageManager : NSObject
 @property (nonatomic) NSUInteger index;
@@ -101,7 +96,7 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
-    transition.transitionFilter = [[YUGLViewControllerTransitionSwapFilter alloc] init];
+    transition.transitionFilter = [[YUGLSwapTransitionFilter alloc] init];
     transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
 }
@@ -109,7 +104,7 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
-    transition.transitionFilter = [[YUGLViewControllerTransitionSwapFilter alloc] init];
+    transition.transitionFilter = [[YUGLSwapTransitionFilter alloc] init];
     transition.reverse = YES;
     transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;

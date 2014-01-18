@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "YUGLViewControllerTransitionRippleFilter.h"
+#import "YUGLRippleTransitionFilter.h"
 
-NSString *const YUGLViewControllerTransitionRippleFilterFragmentShaderString = SHADER_STRING
+NSString *const YUGLRippleTransitionFilterFragmentShaderString = SHADER_STRING
 (
  precision highp float;
  
@@ -34,17 +34,17 @@ NSString *const YUGLViewControllerTransitionRippleFilterFragmentShaderString = S
 );
 
 
-@interface YUGLViewControllerTransitionRippleFilter()
+@interface YUGLRippleTransitionFilter()
 @property (nonatomic) GLint progressUniform;
 @property (nonatomic) GLint amplitudeUniform;
 @property (nonatomic) GLint speedUniform;
 @end
 
-@implementation YUGLViewControllerTransitionRippleFilter
+@implementation YUGLRippleTransitionFilter
 
 - (id)init;
 {
-    if (!(self = [super initWithFragmentShaderFromString:YUGLViewControllerTransitionRippleFilterFragmentShaderString]))
+    if (!(self = [super initWithFragmentShaderFromString:YUGLRippleTransitionFilterFragmentShaderString]))
     {
 		return nil;
     }

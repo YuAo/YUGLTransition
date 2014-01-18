@@ -7,9 +7,9 @@
 //
 
 #import "GPUImageTwoInputFilter.h"
-#import "YUGLViewControllerTransitionFilter.h"
+#import "YUGLTransitionFilter.h"
 
-@interface YUGLViewControllerTransitionFlyeyeFilter : GPUImageTwoInputFilter <YUGLViewControllerTransitionFilter>
+@interface YUGLFlyeyeTransitionFilter : GPUImageTwoInputFilter <YUGLTransitionFilter>
 @property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat size;
 @property (nonatomic) CGFloat zoom;

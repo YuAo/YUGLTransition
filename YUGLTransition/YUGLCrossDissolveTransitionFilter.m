@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "YUGLViewControllerTransitionCrossDissolveFilter.h"
+#import "YUGLCrossDissolveTransitionFilter.h"
 
-@implementation YUGLViewControllerTransitionCrossDissolveFilter
+@implementation YUGLCrossDissolveTransitionFilter
 
 - (CGFloat)progress {
     return self.mix;

@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "YUGLViewControllerTransitionFlashFilter.h"
+#import "YUGLFlashTransitionFilter.h"
 
 
-NSString *const YUGLViewControllerTransitionFlashFilterFragmentShaderString = SHADER_STRING
+NSString *const YUGLFlashTransitionFilterFragmentShaderString = SHADER_STRING
 (
  precision highp float;
  
@@ -39,18 +39,18 @@ NSString *const YUGLViewControllerTransitionFlashFilterFragmentShaderString = SH
  }
 );
 
-@interface YUGLViewControllerTransitionFlashFilter ()
+@interface YUGLFlashTransitionFilter ()
 @property (nonatomic) GLint progressUniform;
 @property (nonatomic) GLint flashPhaseUniform;
 @property (nonatomic) GLint flashIntensityUniform;
 @property (nonatomic) GLint flashZoomEffectUniform;
 @end
 
-@implementation YUGLViewControllerTransitionFlashFilter
+@implementation YUGLFlashTransitionFilter
 
 - (id)init;
 {
-    if (!(self = [super initWithFragmentShaderFromString:YUGLViewControllerTransitionFlashFilterFragmentShaderString]))
+    if (!(self = [super initWithFragmentShaderFromString:YUGLFlashTransitionFilterFragmentShaderString]))
     {
 		return nil;
     }

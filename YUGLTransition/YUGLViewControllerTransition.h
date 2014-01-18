@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <GPUImage/GPUImage.h>
-#import "YUGLViewControllerTransitionFilter.h"
+#import "YUGLTransitionFilter.h"
 #import "YUMediaTimingFunction.h"
 
 @interface YUGLViewControllerTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic,strong) GPUImageFilter<YUGLViewControllerTransitionFilter> *transitionFilter;
+@property (nonatomic,strong) GPUImageFilter<YUGLTransitionFilter> *transitionFilter;
 
 @property (nonatomic) NSTimeInterval duration;
 

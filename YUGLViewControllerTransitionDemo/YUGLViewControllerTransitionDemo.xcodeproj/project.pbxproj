@@ -24,14 +24,13 @@
 		9D3FF6B91888DF060015FF23 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B51888DF060015FF23 /* 2.jpg */; };
 		9D3FF6BA1888DF060015FF23 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B61888DF060015FF23 /* 3.jpg */; };
 		9D3FF6BB1888DF060015FF23 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B71888DF060015FF23 /* 0.jpg */; };
-		9D3FF6BF1888E2930015FF23 /* YUGLViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6BE1888E2930015FF23 /* YUGLViewControllerTransition.m */; };
-		9D3FF6C31888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6C21888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.m */; };
-		9D3FF6C61888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6C51888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.m */; };
-		9D3FF6C91888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6C81888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.m */; };
-		9D3FF6CC1888FCFD0015FF23 /* YUGLViewControllerTransitionBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6CB1888FCFC0015FF23 /* YUGLViewControllerTransitionBlurFilter.m */; };
-		9D3FF6CF188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6CE188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.m */; };
-		9D3FF6D2188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6D1188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.m */; };
-		9DE4462318892AE50015FCFB /* YUMediaTimingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4462218892AE50015FCFB /* YUMediaTimingFunction.m */; };
+		9D7D6F76188A29C1009AB974 /* YUGLViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */; };
+		9D7D6F78188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F6A188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m */; };
+		9D7D6F79188A29C1009AB974 /* YUGLFlashTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F6D188A29C1009AB974 /* YUGLFlashTransitionFilter.m */; };
+		9D7D6F7A188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F6F188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.m */; };
+		9D7D6F7B188A29C1009AB974 /* YUGLRippleTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F71188A29C1009AB974 /* YUGLRippleTransitionFilter.m */; };
+		9D7D6F7C188A29C1009AB974 /* YUGLSwapTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */; };
+		9D7D6F7D188A29C1009AB974 /* YUMediaTimingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */; };
 		DE4B025A6DC34AFE9B2D3408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3E9520FDEC46BEB6AD1B1A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,23 +67,21 @@
 		9D3FF6B51888DF060015FF23 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		9D3FF6B61888DF060015FF23 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		9D3FF6B71888DF060015FF23 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
-		9D3FF6BD1888E2930015FF23 /* YUGLViewControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransition.h; sourceTree = "<group>"; };
-		9D3FF6BE1888E2930015FF23 /* YUGLViewControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransition.m; sourceTree = "<group>"; };
-		9D3FF6C01888E62C0015FF23 /* YUGLViewControllerTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionFilter.h; sourceTree = "<group>"; };
-		9D3FF6C11888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionCrossDissolveFilter.h; sourceTree = "<group>"; };
-		9D3FF6C21888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionCrossDissolveFilter.m; sourceTree = "<group>"; };
-		9D3FF6C41888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionFlashFilter.h; sourceTree = "<group>"; };
-		9D3FF6C51888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionFlashFilter.m; sourceTree = "<group>"; };
-		9D3FF6C71888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionFlyeyeFilter.h; sourceTree = "<group>"; };
-		9D3FF6C81888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionFlyeyeFilter.m; sourceTree = "<group>"; };
-		9D3FF6CA1888FCFC0015FF23 /* YUGLViewControllerTransitionBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionBlurFilter.h; sourceTree = "<group>"; };
-		9D3FF6CB1888FCFC0015FF23 /* YUGLViewControllerTransitionBlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionBlurFilter.m; sourceTree = "<group>"; };
-		9D3FF6CD188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionRippleFilter.h; sourceTree = "<group>"; };
-		9D3FF6CE188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionRippleFilter.m; sourceTree = "<group>"; };
-		9D3FF6D0188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransitionSwapFilter.h; sourceTree = "<group>"; };
-		9D3FF6D1188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionSwapFilter.m; sourceTree = "<group>"; };
-		9DE4462118892AE50015FCFB /* YUMediaTimingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUMediaTimingFunction.h; sourceTree = "<group>"; };
-		9DE4462218892AE50015FCFB /* YUMediaTimingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUMediaTimingFunction.m; sourceTree = "<group>"; };
+		9D7D6F65188A29C1009AB974 /* YUGLViewControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransition.h; sourceTree = "<group>"; };
+		9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransition.m; sourceTree = "<group>"; };
+		9D7D6F69188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLCrossDissolveTransitionFilter.h; sourceTree = "<group>"; };
+		9D7D6F6A188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLCrossDissolveTransitionFilter.m; sourceTree = "<group>"; };
+		9D7D6F6B188A29C1009AB974 /* YUGLTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLTransitionFilter.h; sourceTree = "<group>"; };
+		9D7D6F6C188A29C1009AB974 /* YUGLFlashTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLFlashTransitionFilter.h; sourceTree = "<group>"; };
+		9D7D6F6D188A29C1009AB974 /* YUGLFlashTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLFlashTransitionFilter.m; sourceTree = "<group>"; };
+		9D7D6F6E188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLFlyeyeTransitionFilter.h; sourceTree = "<group>"; };
+		9D7D6F6F188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLFlyeyeTransitionFilter.m; sourceTree = "<group>"; };
+		9D7D6F70188A29C1009AB974 /* YUGLRippleTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLRippleTransitionFilter.h; sourceTree = "<group>"; };
+		9D7D6F71188A29C1009AB974 /* YUGLRippleTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLRippleTransitionFilter.m; sourceTree = "<group>"; };
+		9D7D6F72188A29C1009AB974 /* YUGLSwapTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLSwapTransitionFilter.h; sourceTree = "<group>"; };
+		9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLSwapTransitionFilter.m; sourceTree = "<group>"; };
+		9D7D6F74188A29C1009AB974 /* YUMediaTimingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUMediaTimingFunction.h; sourceTree = "<group>"; };
+		9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUMediaTimingFunction.m; sourceTree = "<group>"; };
 		A94BD1950F0843ABB258FA31 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EF3E9520FDEC46BEB6AD1B1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,7 +146,7 @@
 		9D3FF6831888DC590015FF23 /* YUGLViewControllerTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9D3FF6BC1888E27E0015FF23 /* YUGLViewControllerTransition */,
+				9D7D6F64188A29C1009AB974 /* YUGLTransition */,
 				9D3FF68C1888DC590015FF23 /* YUAppDelegate.h */,
 				9D3FF68D1888DC590015FF23 /* YUAppDelegate.m */,
 				9D3FF6921888DC590015FF23 /* YUDemoViewController.h */,
@@ -201,29 +198,27 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		9D3FF6BC1888E27E0015FF23 /* YUGLViewControllerTransition */ = {
+		9D7D6F64188A29C1009AB974 /* YUGLTransition */ = {
 			isa = PBXGroup;
 			children = (
-				9D3FF6BD1888E2930015FF23 /* YUGLViewControllerTransition.h */,
-				9D3FF6BE1888E2930015FF23 /* YUGLViewControllerTransition.m */,
-				9D3FF6C01888E62C0015FF23 /* YUGLViewControllerTransitionFilter.h */,
-				9DE4462118892AE50015FCFB /* YUMediaTimingFunction.h */,
-				9DE4462218892AE50015FCFB /* YUMediaTimingFunction.m */,
-				9D3FF6C11888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.h */,
-				9D3FF6C21888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.m */,
-				9D3FF6C41888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.h */,
-				9D3FF6C51888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.m */,
-				9D3FF6C71888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.h */,
-				9D3FF6C81888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.m */,
-				9D3FF6CA1888FCFC0015FF23 /* YUGLViewControllerTransitionBlurFilter.h */,
-				9D3FF6CB1888FCFC0015FF23 /* YUGLViewControllerTransitionBlurFilter.m */,
-				9D3FF6CD188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.h */,
-				9D3FF6CE188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.m */,
-				9D3FF6D0188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.h */,
-				9D3FF6D1188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.m */,
+				9D7D6F65188A29C1009AB974 /* YUGLViewControllerTransition.h */,
+				9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */,
+				9D7D6F6B188A29C1009AB974 /* YUGLTransitionFilter.h */,
+				9D7D6F69188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.h */,
+				9D7D6F6A188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m */,
+				9D7D6F6C188A29C1009AB974 /* YUGLFlashTransitionFilter.h */,
+				9D7D6F6D188A29C1009AB974 /* YUGLFlashTransitionFilter.m */,
+				9D7D6F6E188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.h */,
+				9D7D6F6F188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.m */,
+				9D7D6F70188A29C1009AB974 /* YUGLRippleTransitionFilter.h */,
+				9D7D6F71188A29C1009AB974 /* YUGLRippleTransitionFilter.m */,
+				9D7D6F72188A29C1009AB974 /* YUGLSwapTransitionFilter.h */,
+				9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */,
+				9D7D6F74188A29C1009AB974 /* YUMediaTimingFunction.h */,
+				9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */,
 			);
-			name = YUGLViewControllerTransition;
-			path = ../../YUGLViewControllerTransition;
+			name = YUGLTransition;
+			path = ../../YUGLTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,17 +357,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3FF6BF1888E2930015FF23 /* YUGLViewControllerTransition.m in Sources */,
-				9D3FF6CC1888FCFD0015FF23 /* YUGLViewControllerTransitionBlurFilter.m in Sources */,
+				9D7D6F76188A29C1009AB974 /* YUGLViewControllerTransition.m in Sources */,
 				9D3FF6941888DC590015FF23 /* YUDemoViewController.m in Sources */,
-				9D3FF6D2188903C90015FF23 /* YUGLViewControllerTransitionSwapFilter.m in Sources */,
 				9D3FF68E1888DC590015FF23 /* YUAppDelegate.m in Sources */,
-				9D3FF6CF188900200015FF23 /* YUGLViewControllerTransitionRippleFilter.m in Sources */,
+				9D7D6F7C188A29C1009AB974 /* YUGLSwapTransitionFilter.m in Sources */,
+				9D7D6F7B188A29C1009AB974 /* YUGLRippleTransitionFilter.m in Sources */,
+				9D7D6F7A188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.m in Sources */,
+				9D7D6F79188A29C1009AB974 /* YUGLFlashTransitionFilter.m in Sources */,
+				9D7D6F78188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m in Sources */,
 				9D3FF68A1888DC590015FF23 /* main.m in Sources */,
-				9D3FF6C31888E7180015FF23 /* YUGLViewControllerTransitionCrossDissolveFilter.m in Sources */,
-				9D3FF6C91888FA750015FF23 /* YUGLViewControllerTransitionFlyeyeFilter.m in Sources */,
-				9D3FF6C61888F6760015FF23 /* YUGLViewControllerTransitionFlashFilter.m in Sources */,
-				9DE4462318892AE50015FCFB /* YUMediaTimingFunction.m in Sources */,
+				9D7D6F7D188A29C1009AB974 /* YUMediaTimingFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,8 @@
 //
 
 #import "GPUImageDissolveBlendFilter.h"
-#import "YUGLViewControllerTransitionFilter.h"
+#import "YUGLTransitionFilter.h"
 
-@interface YUGLViewControllerTransitionCrossDissolveFilter : GPUImageDissolveBlendFilter <YUGLViewControllerTransitionFilter>
+@interface YUGLCrossDissolveTransitionFilter : GPUImageDissolveBlendFilter <YUGLTransitionFilter>
 
 @end

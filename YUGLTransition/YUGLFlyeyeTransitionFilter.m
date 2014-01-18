@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "YUGLViewControllerTransitionFlyeyeFilter.h"
+#import "YUGLFlyeyeTransitionFilter.h"
 
-NSString *const YUGLViewControllerTransitionFlyeyeFilterFragmentShaderString = SHADER_STRING
+NSString *const YUGLFlyeyeTransitionFilterFragmentShaderString = SHADER_STRING
 (
  precision highp float;
  
@@ -34,17 +34,17 @@ NSString *const YUGLViewControllerTransitionFlyeyeFilterFragmentShaderString = S
  }
 );
 
-@interface YUGLViewControllerTransitionFlyeyeFilter ()
+@interface YUGLFlyeyeTransitionFilter ()
 @property (nonatomic) GLint progressUniform;
 @property (nonatomic) GLint sizeUniform;
 @property (nonatomic) GLint zoomUniform;
 @end
 
-@implementation YUGLViewControllerTransitionFlyeyeFilter
+@implementation YUGLFlyeyeTransitionFilter
 
 - (id)init;
 {
-    if (!(self = [super initWithFragmentShaderFromString:YUGLViewControllerTransitionFlyeyeFilterFragmentShaderString]))
+    if (!(self = [super initWithFragmentShaderFromString:YUGLFlyeyeTransitionFilterFragmentShaderString]))
     {
 		return nil;
     }

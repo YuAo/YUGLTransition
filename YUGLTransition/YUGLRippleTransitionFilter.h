@@ -7,9 +7,9 @@
 //
 
 #import "GPUImageTwoInputFilter.h"
-#import "YUGLViewControllerTransitionFilter.h"
+#import "YUGLTransitionFilter.h"
 
-@interface YUGLViewControllerTransitionRippleFilter : GPUImageTwoInputFilter <YUGLViewControllerTransitionFilter>
+@interface YUGLRippleTransitionFilter : GPUImageTwoInputFilter <YUGLTransitionFilter>
 @property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat amplitude;
 @property (nonatomic) CGFloat speed;

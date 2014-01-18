@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol YUGLViewControllerTransitionFilter <NSObject>
+@protocol YUGLTransitionFilter <NSObject>
 
 @property (nonatomic) CGFloat progress;
 
