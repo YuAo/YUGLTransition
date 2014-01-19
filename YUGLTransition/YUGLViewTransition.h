@@ -13,11 +13,11 @@
 @interface YUGLViewTransition : NSObject
 
 + (YUGLViewTransition *)transitionWithView:(UIView *)view
-                  duration:(NSTimeInterval)duration
-          transitionFilter:(YUGLTransitionFilter *)transitionFilter
-            timingFunction:(YUMediaTimingFunction *)timingFunction
-                animations:(void (^)(void))animations
-                completion:(void (^)(BOOL finished))completion;
+                                  duration:(NSTimeInterval)duration
+                          transitionFilter:(YUGLTransitionFilter *)transitionFilter
+                            timingFunction:(YUMediaTimingFunction *)timingFunction
+                                animations:(void (^)(void))animations
+                                completion:(void (^)(BOOL finished))completion;
 
 - (void)stop;
 
