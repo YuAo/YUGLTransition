@@ -84,12 +84,12 @@
         self.transitionRenderer =({
             YUGLTransitionRenderer *renderer =
             [[YUGLTransitionRenderer alloc] initWithTransitionFilter:transitionFilter inputImage:inputImage inputTargetImage:targetImage];
-            renderer.renderTarget = self.renderSurface;
             if (self.reversed) {
                 renderer.progress = 1;
             } else {
                 renderer.progress = 0;
             }
+            renderer.renderTarget = self.renderSurface;
             renderer;
         });
         
