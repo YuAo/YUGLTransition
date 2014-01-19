@@ -34,11 +34,18 @@
 }
 
 - (void)render {
-    [self.inputImage processImage];
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    [self.targetImage processImageWithCompletionHandler:^{
+    
+    BOOL inputImageProcessed = [self.inputImage processImageWithCompletionHandler:^{
         dispatch_semaphore_signal(semaphore);
     }];
+    if (!inputImageProcessed) dispatch_semaphore_signal(semaphore);
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+
+    BOOL targetImageProcessed = [self.targetImage processImageWithCompletionHandler:^{
+        dispatch_semaphore_signal(semaphore);
+    }];
+    if (!targetImageProcessed) dispatch_semaphore_signal(semaphore);
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 }
 
