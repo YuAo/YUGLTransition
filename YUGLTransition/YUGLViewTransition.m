@@ -23,7 +23,7 @@
 @property (nonatomic,weak)   CADisplayLink          *displayLink;
 @property (nonatomic)        NSTimeInterval         transitionStartTimestamp;
 
-@property (nonatomic,copy)   void  (^completionBlock)(void);
+@property (nonatomic,copy)   void  (^completionBlock)(BOOL);
 
 @end
 
@@ -42,10 +42,9 @@
                           transitionFilter:(YUGLTransitionFilter *)transitionFilter
                             timingFunction:(YUMediaTimingFunction *)timingFunction
                                 animations:(void (^)(void))animations
-                                completion:(void (^)(void))completion
+                                completion:(void (^)(BOOL))completion
 {
     YUGLViewTransition *transition = [[YUGLViewTransition alloc] initWithReferenceView:view duration:duration transitionFilter:transitionFilter timingFunction:timingFunction animations:animations completion:completion];
-    [transition begin];
     return transition;
 }
 
@@ -54,7 +53,7 @@
            transitionFilter:(YUGLTransitionFilter *)transitionFilter
              timingFunction:(YUMediaTimingFunction *)timingFunction
                  animations:(void (^)(void))animations
-                 completion:(void (^)(void))completion
+                 completion:(void (^)(BOOL))completion
 {
     if (self = [super init]) {
         self.duration = duration;
@@ -75,16 +74,19 @@
         self.transitionRenderer.renderTarget = renderSurface;
         
         CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateTransition:)];
-        displayLink.paused = YES;
         self.displayLink = displayLink;
+        self.transitionStartTimestamp = 0;
         [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     }
     return self;
 }
 
-- (void)begin {
-    self.transitionStartTimestamp = 0;
-    self.displayLink.paused = NO;
+- (void)stop {
+    if (self.displayLink && self.transitionRenderer.progress < 1) {
+        [self.displayLink invalidate];
+        [self.renderSurface removeFromSuperview];
+        if (self.completionBlock) self.completionBlock(NO);
+    }
 }
 
 - (void)updateTransition:(CADisplayLink *)sender {
@@ -100,7 +102,7 @@
     if (progress >= 1) {
         [self.displayLink invalidate];
         [self.renderSurface removeFromSuperview];
-        if (self.completionBlock) self.completionBlock();
+        if (self.completionBlock) self.completionBlock(YES);
     } else {
         self.transitionRenderer.progress = progress;
     }

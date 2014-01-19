@@ -17,6 +17,8 @@
           transitionFilter:(YUGLTransitionFilter *)transitionFilter
             timingFunction:(YUMediaTimingFunction *)timingFunction
                 animations:(void (^)(void))animations
-                completion:(void (^)(void))completion;
+                completion:(void (^)(BOOL finished))completion;
+
+- (void)stop;
 
 @end
