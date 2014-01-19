@@ -7,9 +7,7 @@
 //
 
 #import "YUDemoViewController.h"
-#import "YUGLViewControllerTransition.h"
-#import "YUGLSwapTransitionFilter.h"
-#import "YUGLDoorwayTransitionFilter.h"
+#import "YUGLTransition.h"
 
 @interface YUDemoViewControllerBackgroundImageManager : NSObject
 @property (nonatomic) NSUInteger index;

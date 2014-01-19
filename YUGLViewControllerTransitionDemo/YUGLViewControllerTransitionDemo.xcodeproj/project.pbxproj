@@ -76,6 +76,7 @@
 		9D66EC93188AC45F0090DBB4 /* YUGLTransitionRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLTransitionRenderer.m; sourceTree = "<group>"; };
 		9D6F9D6D188B9E6A00ECC3B9 /* YUGLDoorwayTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLDoorwayTransitionFilter.h; sourceTree = "<group>"; };
 		9D6F9D6E188B9E6A00ECC3B9 /* YUGLDoorwayTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLDoorwayTransitionFilter.m; sourceTree = "<group>"; };
+		9D6F9D70188C109E00ECC3B9 /* YUGLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLTransition.h; sourceTree = "<group>"; };
 		9D7D6F65188A29C1009AB974 /* YUGLViewControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLViewControllerTransition.h; sourceTree = "<group>"; };
 		9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransition.m; sourceTree = "<group>"; };
 		9D7D6F69188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLCrossDissolveTransitionFilter.h; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		9D7D6F64188A29C1009AB974 /* YUGLTransition */ = {
 			isa = PBXGroup;
 			children = (
+				9D6F9D70188C109E00ECC3B9 /* YUGLTransition.h */,
 				9D66EC92188AC45F0090DBB4 /* YUGLTransitionRenderer.h */,
 				9D66EC93188AC45F0090DBB4 /* YUGLTransitionRenderer.m */,
 				9D66EC8C188AC0DC0090DBB4 /* YUGLViewTransition.h */,
