@@ -33,6 +33,7 @@ static const CGPoint YUDefaultTimingFunctionControlPoint2       = {0.25, 1.0};
 @property (nonatomic) NSTimeInterval duration;
 @property (nonatomic) CGFloat ax,bx,cx,ay,by,cy;
 @property (nonatomic) YUMediaTimingCFunctionPointer functionPointer;
+@property (nonatomic,copy) double (^functionBlock)(double);
 @end
 
 @implementation YUMediaTimingFunction
@@ -68,6 +69,12 @@ static const CGPoint YUDefaultTimingFunctionControlPoint2       = {0.25, 1.0};
 + (id)functionWithCFunctionPointer:(YUMediaTimingCFunctionPointer)functionPointer {
     YUMediaTimingFunction *timingFunction = [[YUMediaTimingFunction alloc] init];
     timingFunction.functionPointer = functionPointer;
+    return timingFunction;
+}
+
++ (id)functionWithBlock:(double (^)(double input))functionBlock {
+    YUMediaTimingFunction *timingFunction = [[YUMediaTimingFunction alloc] init];
+    timingFunction.functionBlock = functionBlock;
     return timingFunction;
 }
 
@@ -115,6 +122,8 @@ static const CGPoint YUDefaultTimingFunctionControlPoint2       = {0.25, 1.0};
     }
     if (self.functionPointer) {
         return (*self.functionPointer)(input);
+    } else if (self.functionBlock) {
+        return self.functionBlock(input);
     } else {
         CGFloat epsilon = [self epsilon];
         CGFloat xSolved = [self solveCurveX:input epsilon:epsilon];

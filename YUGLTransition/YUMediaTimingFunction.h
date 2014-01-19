@@ -20,6 +20,8 @@ extern NSString * const YUMediaTimingFunctionEaseInEaseOut;
 
 + (id)functionWithCFunctionPointer:(YUMediaTimingCFunctionPointer)functionPointer;
 
++ (id)functionWithBlock:(double (^)(double input))functionBlock;
+
 /* A convenience method for creating common timing functions. The
  * currently supported names are `linear', `easeIn', `easeOut' and
  * `easeInEaseOut' and `default' (the curve used by implicit animations

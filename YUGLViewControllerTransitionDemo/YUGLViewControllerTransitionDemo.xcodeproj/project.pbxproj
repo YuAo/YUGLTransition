@@ -213,6 +213,8 @@
 				9D66EC8D188AC0DC0090DBB4 /* YUGLViewTransition.m */,
 				9D7D6F65188A29C1009AB974 /* YUGLViewControllerTransition.h */,
 				9D7D6F66188A29C1009AB974 /* YUGLViewControllerTransition.m */,
+				9D7D6F74188A29C1009AB974 /* YUMediaTimingFunction.h */,
+				9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */,
 				9D7D6F6B188A29C1009AB974 /* YUGLTransitionFilter.h */,
 				9D7D6F69188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.h */,
 				9D7D6F6A188A29C1009AB974 /* YUGLCrossDissolveTransitionFilter.m */,
@@ -224,8 +226,6 @@
 				9D7D6F71188A29C1009AB974 /* YUGLRippleTransitionFilter.m */,
 				9D7D6F72188A29C1009AB974 /* YUGLSwapTransitionFilter.h */,
 				9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */,
-				9D7D6F74188A29C1009AB974 /* YUMediaTimingFunction.h */,
-				9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */,
 			);
 			name = YUGLTransition;
 			path = ../../YUGLTransition;

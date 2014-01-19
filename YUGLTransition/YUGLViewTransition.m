@@ -45,6 +45,7 @@
                                 completion:(void (^)(BOOL))completion
 {
     YUGLViewTransition *transition = [[YUGLViewTransition alloc] initWithReferenceView:view duration:duration transitionFilter:transitionFilter timingFunction:timingFunction animations:animations completion:completion];
+    [transition begin];
     return transition;
 }
 
@@ -74,11 +75,16 @@
         self.transitionRenderer.renderTarget = renderSurface;
         
         CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateTransition:)];
+        displayLink.paused = YES;
         self.displayLink = displayLink;
-        self.transitionStartTimestamp = 0;
         [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     }
     return self;
+}
+
+- (void)begin {
+    self.transitionStartTimestamp = 0;
+    self.displayLink.paused = NO;
 }
 
 - (void)stop {
