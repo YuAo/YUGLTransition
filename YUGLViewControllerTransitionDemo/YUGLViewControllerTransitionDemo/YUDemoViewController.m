@@ -9,6 +9,7 @@
 #import "YUDemoViewController.h"
 #import "YUGLViewControllerTransition.h"
 #import "YUGLSwapTransitionFilter.h"
+#import "YUGLDoorwayTransitionFilter.h"
 
 @interface YUDemoViewControllerBackgroundImageManager : NSObject
 @property (nonatomic) NSUInteger index;
@@ -96,7 +97,7 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
-    transition.transitionFilter = [[YUGLSwapTransitionFilter alloc] init];
+    transition.transitionFilter = [[YUGLDoorwayTransitionFilter alloc] init];
     transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
 }
@@ -104,7 +105,7 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
-    transition.transitionFilter = [[YUGLSwapTransitionFilter alloc] init];
+    transition.transitionFilter = [[YUGLDoorwayTransitionFilter alloc] init];
     transition.reverse = YES;
     transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
