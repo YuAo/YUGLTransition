@@ -15,7 +15,7 @@
 
 @interface YUGLViewTransition ()
 
-@property (nonatomic,weak)   GPUImageView           *renderSurface;
+@property (nonatomic,strong) GPUImageView           *renderSurface;
 @property (nonatomic,strong) YUMediaTimingFunction  *timingFunction;
 @property (nonatomic)        NSTimeInterval         duration;
 @property (nonatomic)        BOOL                   reversed;
@@ -69,8 +69,7 @@
         UIImage *targetImage = [YUGLViewTransition snapshotImageForView:view];
         
         GPUImageView *renderSurface = [[GPUImageView alloc] initWithFrame:view.bounds];
-        renderSurface.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        [view addSubview:renderSurface];
+        [view.layer addSublayer:renderSurface.layer];
         self.renderSurface = renderSurface;
         
         self.timingFunction = timingFunction;
