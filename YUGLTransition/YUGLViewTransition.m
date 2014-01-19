@@ -18,6 +18,7 @@
 @property (nonatomic,weak)   GPUImageView           *renderSurface;
 @property (nonatomic,strong) YUMediaTimingFunction  *timingFunction;
 @property (nonatomic)        NSTimeInterval         duration;
+@property (nonatomic)        BOOL                   reversed;
 
 @property (nonatomic,strong) YUGLTransitionRenderer *transitionRenderer;
 @property (nonatomic,weak)   CADisplayLink          *displayLink;
@@ -41,10 +42,11 @@
                                   duration:(NSTimeInterval)duration
                           transitionFilter:(YUGLTransitionFilter *)transitionFilter
                             timingFunction:(YUMediaTimingFunction *)timingFunction
+                                  reversed:(BOOL)reversed
                                 animations:(void (^)(void))animations
                                 completion:(void (^)(BOOL))completion
 {
-    YUGLViewTransition *transition = [[YUGLViewTransition alloc] initWithReferenceView:view duration:duration transitionFilter:transitionFilter timingFunction:timingFunction animations:animations completion:completion];
+    YUGLViewTransition *transition = [[YUGLViewTransition alloc] initWithReferenceView:view duration:duration transitionFilter:transitionFilter timingFunction:timingFunction reversed:reversed animations:animations completion:completion];
     [transition begin];
     return transition;
 }
@@ -53,12 +55,14 @@
                    duration:(NSTimeInterval)duration
            transitionFilter:(YUGLTransitionFilter *)transitionFilter
              timingFunction:(YUMediaTimingFunction *)timingFunction
+                   reversed:(BOOL)reversed
                  animations:(void (^)(void))animations
                  completion:(void (^)(BOOL))completion
 {
     if (self = [super init]) {
         self.duration = duration;
         self.completionBlock = completion;
+        self.reversed = reversed;
         
         UIImage *inputImage = [YUGLViewTransition snapshotImageForView:view];
         if (animations) animations();
@@ -71,8 +75,23 @@
         
         self.timingFunction = timingFunction;
         
-        self.transitionRenderer = [[YUGLTransitionRenderer alloc] initWithTransitionFilter:transitionFilter inputImage:inputImage inputTargetImage:targetImage];
-        self.transitionRenderer.renderTarget = renderSurface;
+        if (self.reversed) {
+            UIImage *image = inputImage;
+            inputImage = targetImage;
+            targetImage = image;
+        }
+        
+        self.transitionRenderer =({
+            YUGLTransitionRenderer *renderer =
+            [[YUGLTransitionRenderer alloc] initWithTransitionFilter:transitionFilter inputImage:inputImage inputTargetImage:targetImage];
+            renderer.renderTarget = self.renderSurface;
+            if (self.reversed) {
+                renderer.progress = 1;
+            } else {
+                renderer.progress = 0;
+            }
+            renderer;
+        });
         
         CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateTransition:)];
         displayLink.paused = YES;
@@ -87,11 +106,15 @@
     self.displayLink.paused = NO;
 }
 
+- (void)endTransitionCompleted:(BOOL)completed {
+    [self.displayLink invalidate];
+    [self.renderSurface removeFromSuperview];
+    if (self.completionBlock) self.completionBlock(completed);
+}
+
 - (void)stop {
-    if (self.displayLink && self.transitionRenderer.progress < 1) {
-        [self.displayLink invalidate];
-        [self.renderSurface removeFromSuperview];
-        if (self.completionBlock) self.completionBlock(NO);
+    if (self.displayLink) {
+        [self endTransitionCompleted:NO];
     }
 }
 
@@ -105,10 +128,10 @@
         progress = [self.timingFunction valueForInput:progress];
     }
     
-    if (progress >= 1) {
-        [self.displayLink invalidate];
-        [self.renderSurface removeFromSuperview];
-        if (self.completionBlock) self.completionBlock(YES);
+    if (self.reversed) progress = 1 - progress;
+    
+    if ((!self.reversed && progress >= 1) || (self.reversed && progress <= 0)) {
+        [self endTransitionCompleted:YES];
     } else {
         self.transitionRenderer.progress = progress;
     }

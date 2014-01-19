@@ -16,6 +16,7 @@
                                   duration:(NSTimeInterval)duration
                           transitionFilter:(YUGLTransitionFilter *)transitionFilter
                             timingFunction:(YUMediaTimingFunction *)timingFunction
+                                  reversed:(BOOL)reversed
                                 animations:(void (^)(void))animations
                                 completion:(void (^)(BOOL finished))completion;
 

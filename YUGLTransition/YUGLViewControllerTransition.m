@@ -32,6 +32,7 @@
                                   duration:self.duration
                           transitionFilter:self.transitionFilter
                             timingFunction:self.timingFunction
+                                  reversed:self.reverse
                                 animations:^{
                                     [sandboxView addSubview:toViewController.view];
                                 } completion:^(BOOL finished) {
