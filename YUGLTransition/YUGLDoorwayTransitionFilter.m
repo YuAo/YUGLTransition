@@ -37,14 +37,14 @@ NSString *const YUGLDoorwayTransitionFilterFragmentShaderString = SHADER_STRING
  }
  
  vec2 project (vec2 p) {
-     return p * vec2(1.0, -1.2) + vec2(0.0, -0.02);
+     return p * vec2(1.0, -1.0) + vec2(0.0, 2.01);
  }
  
  vec4 bgColor (vec2 p, vec2 pto) {
      vec4 c = black;
      pto = project(pto);
      if (inBounds(pto) > 0) {
-         c += mix(black, texture2D(inputImageTexture2, pto), reflection * mix(1.0, 0.0, pto.y));
+         c += mix(black, texture2D(inputImageTexture2, pto), reflection * mix(0.0, 1.0, pto.y));
      }
      return c;
  }
@@ -101,7 +101,7 @@ NSString *const YUGLDoorwayTransitionFilterFragmentShaderString = SHADER_STRING
     self.depthUniform = [filterProgram uniformIndex:@"depth"];
     
     self.progress = 0;
-    self.reflection = 0;
+    self.reflection = 0.4;
     self.perspective = 0.4;
     self.depth = 3.0;
     
