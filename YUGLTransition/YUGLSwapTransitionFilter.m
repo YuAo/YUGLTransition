@@ -29,7 +29,7 @@ NSString *const YUGLSwapTransitionFilterFragmentShaderString = SHADER_STRING
  const vec2 boundMax = vec2(1.0, 1.0);
  
  vec2 project (vec2 p) {
-     return p * vec2(1.0, -1.2) + vec2(0.0, -0.02);
+     return p * vec2(1.0, -1.0) + vec2(0.0, 2.01);
  }
  
  int inBounds (vec2 p) {
@@ -44,11 +44,11 @@ NSString *const YUGLSwapTransitionFilterFragmentShaderString = SHADER_STRING
      vec4 c = black;
      pfr = project(pfr);
      if (inBounds(pfr) > 0) {
-         c += mix(black, texture2D(inputImageTexture, pfr), reflection * mix(1.0, 0.0, pfr.y));
+         c += mix(black, texture2D(inputImageTexture, pfr), reflection * mix(0.0, 1.0, pfr.y));
      }
      pto = project(pto);
      if (inBounds(pto) > 0) {
-         c += mix(black, texture2D(inputImageTexture2, pto), reflection * mix(1.0, 0.0, pto.y));
+         c += mix(black, texture2D(inputImageTexture2, pto), reflection * mix(0.0, 1.0, pto.y));
      }
      return c;
  }
@@ -113,7 +113,7 @@ NSString *const YUGLSwapTransitionFilterFragmentShaderString = SHADER_STRING
     self.depthUniform = [filterProgram uniformIndex:@"depth"];
     
     self.progress = 0;
-    self.reflection = 0;
+    self.reflection = 0.3;
     self.perspective = 0.4;
     self.depth = 3.0;
     
