@@ -11,6 +11,8 @@
 #import "YUGLTransitionFilter.h"
 #import "YUMediaTimingFunction.h"
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+
 @interface YUGLViewControllerTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic,strong) YUGLTransitionFilter *transitionFilter;
@@ -22,3 +24,5 @@
 @property (nonatomic,strong) YUMediaTimingFunction *timingFunction;
 
 @end
+
+#endif

@@ -9,6 +9,8 @@
 #import "YUGLViewControllerTransition.h"
 #import "YUGLViewTransition.h"
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+
 @implementation YUGLViewControllerTransition
 
 - (id)init {
@@ -41,3 +43,5 @@
 }
 
 @end
+
+#endif
