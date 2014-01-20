@@ -10,6 +10,16 @@ It uses [GPUImage](https://github.com/BradLarson/GPUImage) for the rendering par
 
 There're some ready-to-use transition effects, like ripple, swap, doorway, flash, flyeye, etc. And it allows you to create your own custom transitions by providing your custom transition filter.
 
+##Performance
+
+Performance varies with devices and the filter you choose (the custom shader you write).
+
+For instance, iPhone 4 is capable of performing a full-screen transition with flash transition filter, but it's hard for it to perform the transition with swap filter.
+
+In general, __iPhone 4s__ is capable of playing with all the transition filters currently in this project.
+
+*Note:* The performance of a transition on a real device usually improves, compared to that on the simulator.
+
 ##Usage
 
 ###YUGLViewTransition
@@ -48,3 +58,13 @@ Use `YUGLViewTransition` to create view transition.
 Use `YUGLViewControllerTransition` to create transitions between view controllers.
 
 `YUGLViewControllerTransition` is just a class that confirms the `UIViewControllerAnimatedTransitioning` protocol. You can use this class in the view controller transition process. [See more about `UIViewControllerAnimatedTransitioning` from Apple](https://developer.apple.com/library/ios/documentation/uikit/reference/UIViewControllerAnimatedTransitioning_Protocol/Reference/Reference.html).
+
+##Requirements
+
+* Automatic Reference Counting (ARC)
+* iOS 6.0+ (iOS 7 is required for using `YUGLViewControllerTransition`)
+* Xcode 5.0+
+
+##Contributing
+
+If you find a bug and know exactly how to fix it, please open a pull request. If you can't make the change yourself, please open an issue after making sure that one isn't already logged.
