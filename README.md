@@ -10,6 +10,21 @@ It uses [GPUImage](https://github.com/BradLarson/GPUImage) for the rendering par
 
 There're some ready-to-use transition effects, like ripple, swap, doorway, flash, flyeye, etc. And it allows you to create your own custom transitions by providing your custom transition filter.
 
+##Transitions
+
+###Preset
+
+There're six preset transition filters currently.
+`YUGLCrossDissolveTransitionFilter` `YUGLFlashTransitionFilter` `YUGLFlyeyeTransitionFilter` `YUGLRippleTransitionFilter` `YUGLSwapTransitionFilter` `YUGLDoorwayTransitionFilter`
+
+I'm not a GLSL expert, and most of the preset filters are ported from [glsl-transtion](https://github.com/gre/glsl-transition) (A javascript library that uses WebGL Shaders to perform transition). You can see demos of the transitions [here](https://gre.github.com/glsl-transition/example).
+
+###Custom
+
+You can create your own transition filter by subclassing `GPUImageFilter`, providing your transition shaders and confirming to the `YUGLTransitionFilter` protocol which only have one property: `progress`. The preset filters are great examples.
+
+Pull requests for new transition filters are welcome.
+
 ##Performance
 
 Performance varies with devices and the filter you choose (the custom shader you write).
@@ -39,15 +54,15 @@ Use `YUGLViewTransition` to create view transition.
                             }];
 ```
 
-`view` : the UIView object where transition take place.
+`view` : The UIView object where transition take place.
 
-`duration` : transition duration.
+`duration` : Transition duration.
 
-`transitionFilter` : a `GPUImageOutput<GPUImageInput,YUGLTransitionFilter>` (basically a `GPUImageFilter`) object that defines the transition.
+`transitionFilter` : A `GPUImageOutput<GPUImageInput,YUGLTransitionFilter>` (basically a `GPUImageFilter`) object that defines the transition.
 
-`timingFunction` : a `YUMediaTimingFunction` object that controls the transition animation curve. Just like `CAMediaTimingFunction`.
+`timingFunction` : A `YUMediaTimingFunction` object that controls the transition animation curve. Just like `CAMediaTimingFunction`.
 
-`reversed` : indicates whether the reverse version of a transition should be used.
+`reversed` : Indicates whether the reverse version of a transition should be used.
 
 `animations` : A block object containing the changes to commit to the `view`.
 

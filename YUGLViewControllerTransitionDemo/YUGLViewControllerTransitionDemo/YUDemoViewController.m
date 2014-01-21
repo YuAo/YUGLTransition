@@ -95,7 +95,7 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
-    transition.transitionFilter = [[YUGLDoorwayTransitionFilter alloc] init];
+    transition.transitionFilter = [[YUGLSwapTransitionFilter alloc] init];
     transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
 }
@@ -103,7 +103,7 @@
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     YUGLViewControllerTransition *transition = [[YUGLViewControllerTransition alloc] init];
     transition.duration = 1.0;
-    transition.transitionFilter = [[YUGLDoorwayTransitionFilter alloc] init];
+    transition.transitionFilter = [[YUGLSwapTransitionFilter alloc] init];
     transition.reverse = YES;
     transition.timingFunction = [YUMediaTimingFunction functionWithName:YUMediaTimingFunctionEaseInEaseOut];
     return transition;
