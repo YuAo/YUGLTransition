@@ -1,6 +1,6 @@
 #YUGLTransition
 ---
-OpenGL based transition for iOS.
+OpenGL based transition for iOS. Based on [GPUImage](https://github.com/BradLarson/GPUImage).
 
 ##Overview
 
@@ -79,6 +79,7 @@ Use `YUGLViewControllerTransition` to create transitions between view controller
 * Automatic Reference Counting (ARC)
 * iOS 6.0+ (iOS 7 is required for using `YUGLViewControllerTransition`)
 * Xcode 5.0+
+* Demo project requires [cocoapods](http://cocoapods.org/): `pod install`
 
 ##Contributing
 
