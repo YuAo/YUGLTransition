@@ -51,6 +51,10 @@
     return transition;
 }
 
+- (void)dealloc {
+    [self.renderSurface.layer removeFromSuperlayer];
+}
+
 - (id)initWithReferenceView:(UIView *)view
                    duration:(NSTimeInterval)duration
            transitionFilter:(YUGLTransitionFilter *)transitionFilter
