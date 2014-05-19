@@ -39,14 +39,12 @@
     BOOL inputImageProcessed = [self.inputImage processImageWithCompletionHandler:^{
         dispatch_semaphore_signal(semaphore);
     }];
-    if (!inputImageProcessed) dispatch_semaphore_signal(semaphore);
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    if (inputImageProcessed) dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 
     BOOL targetImageProcessed = [self.targetImage processImageWithCompletionHandler:^{
         dispatch_semaphore_signal(semaphore);
     }];
-    if (!targetImageProcessed) dispatch_semaphore_signal(semaphore);
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    if (targetImageProcessed) dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 }
 
 - (void)setProgress:(double)progress {
