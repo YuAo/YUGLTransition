@@ -32,7 +32,8 @@
 
 + (UIImage *)snapshotImageForView:(UIView *)view {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 0);
-    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    //[view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;

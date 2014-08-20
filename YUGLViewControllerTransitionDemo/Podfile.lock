@@ -1,10 +1,10 @@
 PODS:
-  - GPUImage (0.1.4)
+  - GPUImage (0.1.5)
 
 DEPENDENCIES:
   - GPUImage
 
 SPEC CHECKSUMS:
-  GPUImage: ac2bde5f4dbea02a81ced6313964cec1f2043ca9
+  GPUImage: 5114a47f5fc33eb312f3731550a3cea379416d04
 
 COCOAPODS: 0.33.1
