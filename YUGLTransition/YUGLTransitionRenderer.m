@@ -16,9 +16,9 @@
 
 @implementation YUGLTransitionRenderer
 
-- (id)initWithTransitionFilter:(YUGLTransitionFilter *)transitionFilter
-                    inputImage:(UIImage *)inputImage
-              inputTargetImage:(UIImage *)inputTargetImage
+- (instancetype)initWithTransitionFilter:(YUGLTransitionFilter *)transitionFilter
+                              inputImage:(UIImage *)inputImage
+                        inputTargetImage:(UIImage *)inputTargetImage
 {
     if (self = [super init]) {
         self.filter = transitionFilter;

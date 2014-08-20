@@ -39,13 +39,13 @@
     return image;
 }
 
-+ (YUGLViewTransition *)transitionWithView:(UIView *)view
-                                  duration:(NSTimeInterval)duration
-                          transitionFilter:(YUGLTransitionFilter *)transitionFilter
-                            timingFunction:(YUMediaTimingFunction *)timingFunction
-                                  reversed:(BOOL)reversed
-                                animations:(void (^)(void))animations
-                                completion:(void (^)(BOOL))completion
++ (instancetype)transitionWithView:(UIView *)view
+                          duration:(NSTimeInterval)duration
+                  transitionFilter:(YUGLTransitionFilter *)transitionFilter
+                    timingFunction:(YUMediaTimingFunction *)timingFunction
+                          reversed:(BOOL)reversed
+                        animations:(void (^)(void))animations
+                        completion:(void (^)(BOOL))completion
 {
     YUGLViewTransition *transition = [[YUGLViewTransition alloc] initWithReferenceView:view duration:duration transitionFilter:transitionFilter timingFunction:timingFunction reversed:reversed animations:animations completion:completion];
     [transition begin];

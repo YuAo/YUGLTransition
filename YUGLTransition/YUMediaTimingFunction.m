@@ -66,19 +66,19 @@ static const CGPoint YUDefaultTimingFunctionControlPoint2       = {0.25, 1.0};
 }
 
 
-+ (id)functionWithCFunctionPointer:(YUMediaTimingCFunctionPointer)functionPointer {
++ (instancetype)functionWithCFunctionPointer:(YUMediaTimingCFunctionPointer)functionPointer {
     YUMediaTimingFunction *timingFunction = [[YUMediaTimingFunction alloc] init];
     timingFunction.functionPointer = functionPointer;
     return timingFunction;
 }
 
-+ (id)functionWithBlock:(double (^)(double input))functionBlock {
++ (instancetype)functionWithBlock:(double (^)(double input))functionBlock {
     YUMediaTimingFunction *timingFunction = [[YUMediaTimingFunction alloc] init];
     timingFunction.functionBlock = functionBlock;
     return timingFunction;
 }
 
-+ (id)functionWithName:(NSString *)name {
++ (instancetype)functionWithName:(NSString *)name {
     NSArray *controlPoints = [YUMediaTimingFunction controlPointsForTimingFunctionWithName:name];
     if (controlPoints.count == 2) {
         CGPoint point1 = [controlPoints.firstObject CGPointValue];
@@ -88,11 +88,11 @@ static const CGPoint YUDefaultTimingFunctionControlPoint2       = {0.25, 1.0};
     return nil;
 }
 
-+ (id)functionWithControlPoints:(float)c1x :(float)c1y :(float)c2x :(float)c2y {
++ (instancetype)functionWithControlPoints:(float)c1x :(float)c1y :(float)c2x :(float)c2y {
     return [[self alloc] initWithControlPoints:c1x :c1y :c2x :c2y];
 }
 
-- (id)initWithControlPoints:(float)c1x :(float)c1y :(float)c2x :(float)c2y {
+- (instancetype)initWithControlPoints:(float)c1x :(float)c1y :(float)c2x :(float)c2y {
     if (self = [super init]) {
         CGPoint controlPoint1 = CGPointMake(c1x, c1y);
         CGPoint controlPoint2 = CGPointMake(c2x, c2y);
@@ -105,7 +105,7 @@ static const CGPoint YUDefaultTimingFunctionControlPoint2       = {0.25, 1.0};
 }
 
 - (void)getControlPointAtIndex:(size_t)idx values:(float [2])ptr {
-    CGPoint point;
+    CGPoint point = CGPointZero;
     if (idx == 0) point = CGPointZero;
     if (idx == 1) point = self.controlPoint1;
     if (idx == 2) point = self.controlPoint2;

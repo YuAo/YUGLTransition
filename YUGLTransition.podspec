@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YUGLTransition"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "OpenGL based transition for iOS. Based on GPUImage."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { "YuAo" => "me@imyuao.com" }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/YuAo/YUGLTransition.git", :tag => "0.2.0" }
+  s.source       = { :git => "https://github.com/YuAo/YUGLTransition.git", :tag => "0.3.0" }
   s.source_files = 'YUGLTransition/**/*.{h,m}'
   s.frameworks = 'UIKit', 'Foundation'
   s.requires_arc = true
