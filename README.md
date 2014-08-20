@@ -77,7 +77,7 @@ Use `YUGLViewControllerTransition` to create transitions between view controller
 ##Requirements
 
 * Automatic Reference Counting (ARC)
-* iOS 6.0+ (iOS 7 is required for using `YUGLViewControllerTransition`)
+* iOS 7.0+
 * Xcode 5.0+
 * Demo project requires [cocoapods](http://cocoapods.org/): `pod install`
 
