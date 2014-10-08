@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "GPUImageDissolveBlendFilter.h"
+#import <GPUImage/GPUImage.h>
 #import "YUGLTransitionFilter.h"
 
 @interface YUGLCrossDissolveTransitionFilter : GPUImageDissolveBlendFilter <YUGLTransitionFilter>

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 YuAo. All rights reserved.
 //
 
-#import "GPUImageTwoInputFilter.h"
+#import <GPUImage/GPUImage.h>
 #import "YUGLTransitionFilter.h"
 
 @interface YUGLFlashTransitionFilter : GPUImageTwoInputFilter <YUGLTransitionFilter>
