@@ -34,6 +34,7 @@
 		9D7D6F7B188A29C1009AB974 /* YUGLRippleTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F71188A29C1009AB974 /* YUGLRippleTransitionFilter.m */; };
 		9D7D6F7C188A29C1009AB974 /* YUGLSwapTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */; };
 		9D7D6F7D188A29C1009AB974 /* YUMediaTimingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */; };
+		9DC9B4CC19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9B4CB19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m */; };
 		DE4B025A6DC34AFE9B2D3408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3E9520FDEC46BEB6AD1B1A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,8 @@
 		9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLSwapTransitionFilter.m; sourceTree = "<group>"; };
 		9D7D6F74188A29C1009AB974 /* YUMediaTimingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUMediaTimingFunction.h; sourceTree = "<group>"; };
 		9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUMediaTimingFunction.m; sourceTree = "<group>"; };
+		9DC9B4CA19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLCrossZoomTransitionFilter.h; sourceTree = "<group>"; };
+		9DC9B4CB19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLCrossZoomTransitionFilter.m; sourceTree = "<group>"; };
 		A94BD1950F0843ABB258FA31 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EF3E9520FDEC46BEB6AD1B1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -233,6 +236,8 @@
 				9D7D6F73188A29C1009AB974 /* YUGLSwapTransitionFilter.m */,
 				9D6F9D6D188B9E6A00ECC3B9 /* YUGLDoorwayTransitionFilter.h */,
 				9D6F9D6E188B9E6A00ECC3B9 /* YUGLDoorwayTransitionFilter.m */,
+				9DC9B4CA19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.h */,
+				9DC9B4CB19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m */,
 			);
 			name = YUGLTransition;
 			path = ../../YUGLTransition;
@@ -375,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7D6F76188A29C1009AB974 /* YUGLViewControllerTransition.m in Sources */,
+				9DC9B4CC19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m in Sources */,
 				9D66EC94188AC45F0090DBB4 /* YUGLTransitionRenderer.m in Sources */,
 				9D3FF6941888DC590015FF23 /* YUDemoViewController.m in Sources */,
 				9D3FF68E1888DC590015FF23 /* YUAppDelegate.m in Sources */,
