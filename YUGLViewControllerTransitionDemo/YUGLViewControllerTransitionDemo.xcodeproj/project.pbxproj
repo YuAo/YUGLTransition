@@ -36,6 +36,7 @@
 		9D7D6F7D188A29C1009AB974 /* YUMediaTimingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D6F75188A29C1009AB974 /* YUMediaTimingFunction.m */; };
 		9DC9B4CC19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9B4CB19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m */; };
 		9DC9B4CF19E533A8006E3D73 /* YUGLPowDistortionTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9B4CE19E533A8006E3D73 /* YUGLPowDistortionTransitionFilter.m */; };
+		9DC9B4D519E536D8006E3D73 /* YUGLPixelizeTransitionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9B4D419E536D8006E3D73 /* YUGLPixelizeTransitionFilter.m */; };
 		DE4B025A6DC34AFE9B2D3408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3E9520FDEC46BEB6AD1B1A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,8 @@
 		9DC9B4CB19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLCrossZoomTransitionFilter.m; sourceTree = "<group>"; };
 		9DC9B4CD19E533A8006E3D73 /* YUGLPowDistortionTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLPowDistortionTransitionFilter.h; sourceTree = "<group>"; };
 		9DC9B4CE19E533A8006E3D73 /* YUGLPowDistortionTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLPowDistortionTransitionFilter.m; sourceTree = "<group>"; };
+		9DC9B4D319E536D8006E3D73 /* YUGLPixelizeTransitionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGLPixelizeTransitionFilter.h; sourceTree = "<group>"; };
+		9DC9B4D419E536D8006E3D73 /* YUGLPixelizeTransitionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGLPixelizeTransitionFilter.m; sourceTree = "<group>"; };
 		A94BD1950F0843ABB258FA31 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EF3E9520FDEC46BEB6AD1B1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -243,6 +246,8 @@
 				9DC9B4CB19E52D9F006E3D73 /* YUGLCrossZoomTransitionFilter.m */,
 				9DC9B4CD19E533A8006E3D73 /* YUGLPowDistortionTransitionFilter.h */,
 				9DC9B4CE19E533A8006E3D73 /* YUGLPowDistortionTransitionFilter.m */,
+				9DC9B4D319E536D8006E3D73 /* YUGLPixelizeTransitionFilter.h */,
+				9DC9B4D419E536D8006E3D73 /* YUGLPixelizeTransitionFilter.m */,
 			);
 			name = YUGLTransition;
 			path = ../../YUGLTransition;
@@ -389,6 +394,7 @@
 				9D66EC94188AC45F0090DBB4 /* YUGLTransitionRenderer.m in Sources */,
 				9D3FF6941888DC590015FF23 /* YUDemoViewController.m in Sources */,
 				9D3FF68E1888DC590015FF23 /* YUAppDelegate.m in Sources */,
+				9DC9B4D519E536D8006E3D73 /* YUGLPixelizeTransitionFilter.m in Sources */,
 				9D7D6F7C188A29C1009AB974 /* YUGLSwapTransitionFilter.m in Sources */,
 				9D7D6F7B188A29C1009AB974 /* YUGLRippleTransitionFilter.m in Sources */,
 				9D7D6F7A188A29C1009AB974 /* YUGLFlyeyeTransitionFilter.m in Sources */,

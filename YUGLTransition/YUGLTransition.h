@@ -21,3 +21,4 @@
 #import "YUGLDoorwayTransitionFilter.h"
 #import "YUGLCrossZoomTransitionFilter.h"
 #import "YUGLPowDistortionTransitionFilter.h"
+#import "YUGLPixelizeTransitionFilter.h"
