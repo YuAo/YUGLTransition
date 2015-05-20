@@ -1,0 +1,5 @@
+language: objective-c
+xcode_sdk: iphonesimulator
+xcode_workspace: YUGLViewControllerTransitionDemo/YUGLViewControllerTransitionDemo.xcworkspace # path to your xcodeproj folder
+xcode_scheme: YUGLViewControllerTransitionDemo
+podfile: YUGLViewControllerTransitionDemo/Podfile
