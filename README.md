@@ -1,5 +1,7 @@
 #YUGLTransition
----
+
+[![Build Status](https://travis-ci.org/YuAo/YUGLTransition.svg?branch=master)](https://travis-ci.org/YuAo/YUGLTransition)
+
 OpenGL based transition for iOS. Based on [GPUImage](https://github.com/BradLarson/GPUImage).
 
 ##Overview
