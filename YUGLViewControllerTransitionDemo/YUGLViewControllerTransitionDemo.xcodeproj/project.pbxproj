@@ -15,11 +15,6 @@
 		9D3FF68E1888DC590015FF23 /* YUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF68D1888DC590015FF23 /* YUAppDelegate.m */; };
 		9D3FF6941888DC590015FF23 /* YUDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6931888DC590015FF23 /* YUDemoViewController.m */; };
 		9D3FF6961888DC590015FF23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6951888DC590015FF23 /* Images.xcassets */; };
-		9D3FF69D1888DC590015FF23 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3FF69C1888DC590015FF23 /* XCTest.framework */; };
-		9D3FF69E1888DC590015FF23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3FF67D1888DC590015FF23 /* Foundation.framework */; };
-		9D3FF69F1888DC590015FF23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3FF6811888DC590015FF23 /* UIKit.framework */; };
-		9D3FF6A71888DC590015FF23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6A51888DC590015FF23 /* InfoPlist.strings */; };
-		9D3FF6A91888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FF6A81888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.m */; };
 		9D3FF6B81888DF060015FF23 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B41888DF060015FF23 /* 1.jpg */; };
 		9D3FF6B91888DF060015FF23 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B51888DF060015FF23 /* 2.jpg */; };
 		9D3FF6BA1888DF060015FF23 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FF6B61888DF060015FF23 /* 3.jpg */; };
@@ -40,16 +35,6 @@
 		DE4B025A6DC34AFE9B2D3408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3E9520FDEC46BEB6AD1B1A /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9D3FF6A01888DC590015FF23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D3FF6721888DC590015FF23 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D3FF6791888DC590015FF23;
-			remoteInfo = YUGLViewControllerTransitionDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		9D3FF67A1888DC590015FF23 /* YUGLViewControllerTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUGLViewControllerTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3FF67D1888DC590015FF23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,11 +49,7 @@
 		9D3FF6921888DC590015FF23 /* YUDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YUDemoViewController.h; sourceTree = "<group>"; };
 		9D3FF6931888DC590015FF23 /* YUDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUDemoViewController.m; sourceTree = "<group>"; };
 		9D3FF6951888DC590015FF23 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9D3FF69B1888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YUGLViewControllerTransitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3FF69C1888DC590015FF23 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9D3FF6A41888DC590015FF23 /* YUGLViewControllerTransitionDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YUGLViewControllerTransitionDemoTests-Info.plist"; sourceTree = "<group>"; };
-		9D3FF6A61888DC590015FF23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9D3FF6A81888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUGLViewControllerTransitionDemoTests.m; sourceTree = "<group>"; };
 		9D3FF6B41888DF060015FF23 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		9D3FF6B51888DF060015FF23 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		9D3FF6B61888DF060015FF23 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -117,16 +98,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D3FF6981888DC590015FF23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D3FF69D1888DC590015FF23 /* XCTest.framework in Frameworks */,
-				9D3FF69F1888DC590015FF23 /* UIKit.framework in Frameworks */,
-				9D3FF69E1888DC590015FF23 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				9D3FF6831888DC590015FF23 /* YUGLViewControllerTransitionDemo */,
-				9D3FF6A21888DC590015FF23 /* YUGLViewControllerTransitionDemoTests */,
 				9D3FF67C1888DC590015FF23 /* Frameworks */,
 				9D3FF67B1888DC590015FF23 /* Products */,
 				A94BD1950F0843ABB258FA31 /* Pods.xcconfig */,
@@ -145,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				9D3FF67A1888DC590015FF23 /* YUGLViewControllerTransitionDemo.app */,
-				9D3FF69B1888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,24 +153,6 @@
 				9D3FF6861888DC590015FF23 /* InfoPlist.strings */,
 				9D3FF6891888DC590015FF23 /* main.m */,
 				9D3FF68B1888DC590015FF23 /* YUGLViewControllerTransitionDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9D3FF6A21888DC590015FF23 /* YUGLViewControllerTransitionDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				9D3FF6A81888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.m */,
-				9D3FF6A31888DC590015FF23 /* Supporting Files */,
-			);
-			path = YUGLViewControllerTransitionDemoTests;
-			sourceTree = "<group>";
-		};
-		9D3FF6A31888DC590015FF23 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9D3FF6A41888DC590015FF23 /* YUGLViewControllerTransitionDemoTests-Info.plist */,
-				9D3FF6A51888DC590015FF23 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,24 +226,6 @@
 			productReference = 9D3FF67A1888DC590015FF23 /* YUGLViewControllerTransitionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D3FF69A1888DC590015FF23 /* YUGLViewControllerTransitionDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9D3FF6AF1888DC590015FF23 /* Build configuration list for PBXNativeTarget "YUGLViewControllerTransitionDemoTests" */;
-			buildPhases = (
-				9D3FF6971888DC590015FF23 /* Sources */,
-				9D3FF6981888DC590015FF23 /* Frameworks */,
-				9D3FF6991888DC590015FF23 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9D3FF6A11888DC590015FF23 /* PBXTargetDependency */,
-			);
-			name = YUGLViewControllerTransitionDemoTests;
-			productName = YUGLViewControllerTransitionDemoTests;
-			productReference = 9D3FF69B1888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -302,11 +235,6 @@
 				CLASSPREFIX = YU;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = YuAo;
-				TargetAttributes = {
-					9D3FF69A1888DC590015FF23 = {
-						TestTargetID = 9D3FF6791888DC590015FF23;
-					};
-				};
 			};
 			buildConfigurationList = 9D3FF6751888DC590015FF23 /* Build configuration list for PBXProject "YUGLViewControllerTransitionDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -322,7 +250,6 @@
 			projectRoot = "";
 			targets = (
 				9D3FF6791888DC590015FF23 /* YUGLViewControllerTransitionDemo */,
-				9D3FF69A1888DC590015FF23 /* YUGLViewControllerTransitionDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,14 +265,6 @@
 				9D3FF6961888DC590015FF23 /* Images.xcassets in Resources */,
 				9D3FF6B91888DF060015FF23 /* 2.jpg in Resources */,
 				9D3FF6881888DC590015FF23 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D3FF6991888DC590015FF23 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D3FF6A71888DC590015FF23 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,37 +327,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D3FF6971888DC590015FF23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D3FF6A91888DC590015FF23 /* YUGLViewControllerTransitionDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9D3FF6A11888DC590015FF23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9D3FF6791888DC590015FF23 /* YUGLViewControllerTransitionDemo */;
-			targetProxy = 9D3FF6A01888DC590015FF23 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D3FF6861888DC590015FF23 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9D3FF6871888DC590015FF23 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9D3FF6A51888DC590015FF23 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D3FF6A61888DC590015FF23 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -548,46 +443,6 @@
 			};
 			name = Release;
 		};
-		9D3FF6B01888DC590015FF23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YUGLViewControllerTransitionDemo.app/YUGLViewControllerTransitionDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YUGLViewControllerTransitionDemo/YUGLViewControllerTransitionDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "YUGLViewControllerTransitionDemoTests/YUGLViewControllerTransitionDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		9D3FF6B11888DC590015FF23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YUGLViewControllerTransitionDemo.app/YUGLViewControllerTransitionDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YUGLViewControllerTransitionDemo/YUGLViewControllerTransitionDemo-Prefix.pch";
-				INFOPLIST_FILE = "YUGLViewControllerTransitionDemoTests/YUGLViewControllerTransitionDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,15 +460,6 @@
 			buildConfigurations = (
 				9D3FF6AD1888DC590015FF23 /* Debug */,
 				9D3FF6AE1888DC590015FF23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9D3FF6AF1888DC590015FF23 /* Build configuration list for PBXNativeTarget "YUGLViewControllerTransitionDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D3FF6B01888DC590015FF23 /* Debug */,
-				9D3FF6B11888DC590015FF23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
